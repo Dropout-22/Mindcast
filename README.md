@@ -13,7 +13,7 @@
 ## 🚀 Features
 
 - 📱 Responsive design (desktop and mobile)
-- 🌙 Dark/light mode toggle (coming soon)
+- 🌙 Dark/light mode toggle
 - 📋 Contact form powered by Formspree
 - 📰 Blog post previews and individual pages
 - ☁️ Clean layout with modern UI
