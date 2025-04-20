@@ -46,10 +46,6 @@ mindcast/
 │
 ├── scripts/
 │   └── main.js         # JavaScript for mobile menu, etc.
-│
-└── assets/
-    ├── images/         # (Optional) Blog thumbnails, logos, etc.
-    └── icons/          # (Optional) Custom icons
 
 Wish to improve my site reach out to me at:
 Instagram: @drop.out22
