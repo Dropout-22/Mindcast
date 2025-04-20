@@ -1,90 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mindcast - A Personal Development Blog">
-    <meta name="author" content="Your Name">
-    <title>Mindcast - Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mindcast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="nav-container">
-              <div class="logo">
-                <h1>Mindcast</h1>
-              </div>
-              <button class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-            <ul class="nav-links" id="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact-page">Contact</a></li>
-            </ul>
-          </nav>   
-    </header>
+  <header>
+    <h2>Mindcast</h2>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-switch" />
+          <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="intro">
-            <h2>Welcome to Mindcast</h2>
-            <p>Your go-to blog for personal development, growth, and mindful living.</p>
-        </section>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Welcome to Mindcast</h1>
+      <p>Your guide to personal growth, insight, and mental mastery.</p>
+    </div>
+  </section>
+  
 
-        <section class="featured-posts">
-            <h3>Featured Posts</h3>
-            <div class="post-preview">
-                <h4>The Power of Intentional Living</h4>
-                <p>You decide on how to live on your own terms...</p>
-                <a href="post1.html">Read More</a>
-            </div>
-            <div class="post-preview">
-                <h4>Redefining Success on Your own Terms</h4>
-                <p>Success isn't one size fits all...</p>
-                <a href="post2.html">Read More</a>
-            </div>
-            <div class="post-preview">
-                <h4>Mind over Money</h4>
-                <p>Money isn't just math - it's emotion, mindset and history...</p>
-                <a href="post3.html">Read More</a>
-            </div>
-        </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>Mindcast is your digital space for evolving thoughts, exploring deep topics, and challenging the status quo. We bring you insights into growth, society, and the mind.</p>
+  </section>
 
-        <section class="contact-page">
-            <h2>Contact Me</h2>
-            <p>If you have questions, thoughts, or just want to say hi — drop me a message below.</p>
-        
-            <form class="contact-form" action="https://formspree.io/f/xrbpnvqn"
-            method="POST">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
+  <section class="blog" id="blog">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-cards">
+      
+      <div class="card-container flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3><a href="post1.html">Power of Intentional Living</a></h3>
+            <p>We live in a world that praises busyness...</p>
+          </div>
+          <div class="card-back">
+            <h3>Behind the Post</h3>
+            <p>This article explores mindful living in an overwhelming world.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card-container flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3><a href="post2.html">Living on Our Own Terms</a></h3>
+            <p>Success isn't one-size-fits-all...</p>
+          </div>
+          <div class="card-back">
+            <h3>Why It Matters</h3>
+            <p>Learn how redefining success creates more freedom.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card-container flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3><a href="post3.html">Mind Over Money</a></h3>
+            <p>There's more to money than what you already know...</p>
+          </div>
+          <div class="card-back">
+            <h3>Money & Mindset</h3>
+            <p>This post breaks down psychological money traps we fall into.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
 
-            <div class="social-icons">
-              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>  
-              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>    
-              <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
-              <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </section>    
-    </main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mnqepkld" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>  
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>    
+        <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Mindcast. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Mindcast. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

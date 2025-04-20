@@ -38,9 +38,6 @@
 mindcast/
 │
 ├── index.html          # Home page
-├── blog.html           # Blog listing page
-├── about.html          # About the blog/author
-├── contact.html        # Contact form page
 ├── post1.html          # Individual blog post pages
 ├── post2.html
 ├── post3.html
