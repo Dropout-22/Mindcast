@@ -6,6 +6,10 @@
 
 [Visit Mindcast on GitHub Pages](https://dropout-22.github.io/Mindcast)
 
+## 🌐 Source Code
+
+[Visit Mindcast Sourcecode on this repository] (https://github.com/Dropout-22/Mindcast.git)
+
 ## 🚀 Features
 
 - 📱 Responsive design (desktop and mobile)
