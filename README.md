@@ -8,7 +8,7 @@
 
 ## 🌐 Source Code
 
-[Visit Mindcast Sourcecode on this repository] (https://github.com/Dropout-22/Mindcast.git)
+[Visit Mindcast on GitHub Pages](https://github.com/Dropout-22/Mindcast.git)
 
 ## 🚀 Features
 
