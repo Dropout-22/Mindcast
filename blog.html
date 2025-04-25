@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mindcast | Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">MindCast</div>
+      
+      <nav class="nav">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-switch" />
+          <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+    </div>
+    </div>
+  </header>
+  <!-- Blog Section -->
+  <main class="max-w-6xl mx-auto p-6 mt-6">
+    <h1 class="text-3xl font-bold mb-6">Blog Posts</h1>
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <a href="post1.html" class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition">
+        <img src="assets/post1.jpg" alt="Post 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Unlocking Mental Resilience</h2>
+          <p class="text-gray-600 text-sm">Learn the tools to navigate stress, uncertainty, and grow through struggle.</p>
+        </div>
+      </a>
+      <a href="post2.html" class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition">
+        <img src="assets/post2.jpg" alt="Post 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Why You Should Fail Faster</h2>
+          <p class="text-gray-600 text-sm">A look at how fast feedback loops lead to accelerated learning and innovation.</p>
+        </div>
+      </a>
+      <a href="post3.html" class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition">
+        <img src="assets/post3.jpg" alt="Post 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">The Psychology of Focus</h2>
+          <p class="text-gray-600 text-sm">Discover how to master your attention and direct it toward what really matters.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">MindCast</div>
+  
+      <ul class="footer-socials">
+        <li><a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+  
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+  
+      <p class="footer-copy">&copy; 2025 MindCast. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

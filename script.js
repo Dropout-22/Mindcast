@@ -1,27 +1,10 @@
-// Hamburger toggle
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const nav = document.querySelector('header nav');
-  
-    if (hamburger && nav) {
-      hamburger.addEventListener('click', () => {
-        nav.classList.toggle('show');
-      });
-    }
-  
-    // Toggle menu for post pages
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-  
-    if (menuToggle && navLinks) {
-      menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-    }
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
 
-window.addEventListener('load', () => {
-    document.querySelector('.hero').classList.add('loaded');
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
 });
 
 // Dark/Light Mode Toggle
@@ -54,56 +37,4 @@ toggleSwitch.addEventListener('change', () => {
         sunIcon.style.opacity = '1';
         moonIcon.style.opacity = '0';
     }
-});
-
-
-// Parallax on scroll
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-      heroContent.style.transform = `translateY(${scrollY * 0.3}px)`;
-    }
-});
-  
-// Enhanced scroll animation with stagger
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.1
-});
-
-const revealSections = document.querySelectorAll('section, .card');
-
-revealSections.forEach((el, i) => {
-  el.style.transitionDelay = `${i * 100}ms`;
-  el.classList.add('hidden');
-  observer.observe(el);
-});
-
-document.querySelectorAll('.card-container').forEach(container => {
-    const card = container.querySelector('.card');
-  
-    container.addEventListener('mousemove', (e) => {
-      const rect = container.getBoundingClientRect();
-      const x = e.clientX - rect.left; // x position within the card
-      const y = e.clientY - rect.top;  // y position within the card
-  
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-  
-      const rotateX = ((y - centerY) / centerY) * 10;
-      const rotateY = ((x - centerX) / centerX) * -10;
-  
-      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
-  
-    container.addEventListener('mouseleave', () => {
-      card.style.transform = `rotateX(0) rotateY(0)`;
-    });
 });

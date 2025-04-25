@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mindcast</title>
+  <title>MindCast</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
-  <header>
-    <h2>Mindcast</h2>
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="theme-toggle">
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">MindCast</div>
+      
+      <nav class="nav">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#cta">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
         <label class="switch">
           <input type="checkbox" id="theme-switch" />
           <span class="slider">
@@ -33,89 +37,98 @@
           </span>
         </label>
     </div>
+    </div>
   </header>
 
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1>Welcome to Mindcast</h1>
-      <p>Your guide to personal growth, insight, and mental mastery.</p>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Welcome to Mindcast</h1>
+        <p>Your guide to personal growth, insight, and mental mastery</p>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+   
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p>Mindcast is your digital space for evolving thoughts, exploring deep topics, and challenging the status quo. We bring you insights into growth, society, and the mind.</p>
+      <p></p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-lightbulb" class="footer-socials"></i>
+          <h3>Insight</h3>
+          <p>Explore articles and resources that inspire and inform.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-users" class="footer-socials"></i>
+          <h3>Community</h3>
+          <p>Join a community of like-minded individuals on a journey of growth.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-tools" class="footer-socials"></i>
+          <h3>Tools</h3>
+          <p>Access tools and resources to help you on the path of self-discovery.</p>
+        </div>
+      </div>
     </div>
   </section>
   
-
-  <section id="about">
-    <h2>About</h2>
-    <p>Mindcast is your digital space for evolving thoughts, exploring deep topics, and challenging the status quo. We bring you insights into growth, society, and the mind.</p>
-  </section>
-
-  <section class="blog" id="blog">
-    <h2>Latest Blog Posts</h2>
-    <div class="blog-cards">
-      
-      <div class="card-container flip">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3><a href="post1.html">Power of Intentional Living</a></h3>
-            <p>We live in a world that praises busyness...</p>
-          </div>
-          <div class="card-back">
-            <h3>Behind the Post</h3>
-            <p>This article explores mindful living in an overwhelming world.</p>
-          </div>
+  <section class="blogs">
+    <div class="container">
+      <h2>Some of our articles</h2>
+      <p>For more of our articles <a href="blog.html">click here</a></p>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <h4><a href="post1.html">Power of Intentional Living</a></h4>
+          <p>We live in a world that praises busyness...</p>
         </div>
-      </div>
-  
-      <div class="card-container flip">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3><a href="post2.html">Living on Our Own Terms</a></h3>
-            <p>Success isn't one-size-fits-all...</p>
-          </div>
-          <div class="card-back">
-            <h3>Why It Matters</h3>
-            <p>Learn how redefining success creates more freedom.</p>
-          </div>
+        <div class="testimonial">
+          <h4><a href="post2.html">Living on Our Terms</a></h4>
+          <p>Success isn't one-size-fits-all...</p>
         </div>
-      </div>
-  
-      <div class="card-container flip">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3><a href="post3.html">Mind Over Money</a></h3>
-            <p>There's more to money than what you already know...</p>
-          </div>
-          <div class="card-back">
-            <h3>Money & Mindset</h3>
-            <p>This post breaks down psychological money traps we fall into.</p>
-          </div>
+        <div class="testimonial">
+          <h4><a href="post3.html">Mind Over Money</a></h4>
+          <p>There's more to money than you already know...</p>
         </div>
-      </div>
-  
+      </div>      
     </div>
   </section>
   
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/xanowwjq" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>  
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>    
-        <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
-        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+  <section class="cta">
+    <div class="container cta-container">
+      <h2>Join the Mindcast Community</h2>
+      <p>Subscribe to our newsletter for the latest insights and articles.</p>
+      <form class="cta-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Mindcast. All rights reserved.</p>
+  
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">MindCast</div>
+  
+      <ul class="footer-socials">
+        <li><a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+  
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+  
+      <p class="footer-copy">&copy; 2025 MindCast. All rights reserved.</p>
+    </div>
   </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
